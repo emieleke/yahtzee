@@ -58,7 +58,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(303, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(287, 128);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(107, 91);
             this.pictureBox1.TabIndex = 2;
@@ -103,9 +103,9 @@
             // spelregels
             // 
             this.spelregels.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("spelregels.BackgroundImage")));
-            this.spelregels.Location = new System.Drawing.Point(37, 32);
+            this.spelregels.Location = new System.Drawing.Point(12, 12);
             this.spelregels.Name = "spelregels";
-            this.spelregels.Size = new System.Drawing.Size(117, 68);
+            this.spelregels.Size = new System.Drawing.Size(78, 32);
             this.spelregels.TabIndex = 7;
             this.spelregels.Text = "spelregels";
             this.spelregels.UseVisualStyleBackColor = true;
