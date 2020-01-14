@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button2 = new System.Windows.Forms.Button();
+            this.dobbelen = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -43,17 +43,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // dobbelen
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Location = new System.Drawing.Point(303, 472);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button2.Size = new System.Drawing.Size(307, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "dobbelen";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.dobbelen.BackColor = System.Drawing.Color.DarkGray;
+            this.dobbelen.Location = new System.Drawing.Point(303, 472);
+            this.dobbelen.Name = "dobbelen";
+            this.dobbelen.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dobbelen.Size = new System.Drawing.Size(307, 59);
+            this.dobbelen.TabIndex = 1;
+            this.dobbelen.Text = "dobbelen";
+            this.dobbelen.UseVisualStyleBackColor = false;
+            this.dobbelen.Click += new System.EventHandler(this.dobbelen_Click);
             // 
             // pictureBox1
             // 
@@ -109,7 +109,7 @@
             this.spelregels.TabIndex = 7;
             this.spelregels.Text = "spelregels";
             this.spelregels.UseVisualStyleBackColor = true;
-            this.spelregels.Click += new System.EventHandler(this.button1_Click);
+            this.spelregels.Click += new System.EventHandler(this.spelregels_Click);
             // 
             // Form1
             // 
@@ -125,7 +125,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dobbelen);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -140,7 +140,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button dobbelen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

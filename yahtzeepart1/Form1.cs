@@ -17,15 +17,15 @@ namespace yahtzeepart1
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void dobbelen_Click(object sender, EventArgs e)
         {
       
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void spelregels_Click(object sender, EventArgs e)
         {
 
         }
     }
-    }
+}
 
