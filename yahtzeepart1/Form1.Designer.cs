@@ -135,7 +135,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            this.Text = "yathzee  (chris, emiel, emre, dyan, mike)";
+            this.Text = "yathzee  (chris, emiel, emre, dylan, mike)";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
