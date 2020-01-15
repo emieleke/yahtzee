@@ -46,7 +46,7 @@
             // dobbelen
             // 
             this.dobbelen.BackColor = System.Drawing.Color.DarkGray;
-            this.dobbelen.Location = new System.Drawing.Point(303, 472);
+            this.dobbelen.Location = new System.Drawing.Point(275, 461);
             this.dobbelen.Name = "dobbelen";
             this.dobbelen.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dobbelen.Size = new System.Drawing.Size(307, 59);
@@ -58,45 +58,47 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(287, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(261, 167);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(193, 292);
+            this.pictureBox2.Location = new System.Drawing.Point(147, 283);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 91);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(398, 292);
+            this.pictureBox3.Location = new System.Drawing.Point(379, 283);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(107, 91);
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.Location = new System.Drawing.Point(605, 292);
+            this.pictureBox4.Location = new System.Drawing.Point(615, 283);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(107, 91);
+            this.pictureBox4.Size = new System.Drawing.Size(100, 100);
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Black;
-            this.pictureBox5.Location = new System.Drawing.Point(503, 128);
+            this.pictureBox5.Location = new System.Drawing.Point(505, 167);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(107, 91);
+            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
             this.pictureBox5.TabIndex = 6;
             this.pictureBox5.TabStop = false;
             // 
