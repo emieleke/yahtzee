@@ -205,11 +205,14 @@
             // 
             // bonus_textbox
             // 
-            this.bonus_textbox.Location = new System.Drawing.Point(389, 25);
+            this.bonus_textbox.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.bonus_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bonus_textbox.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold);
+            this.bonus_textbox.Location = new System.Drawing.Point(778, 453);
             this.bonus_textbox.Multiline = true;
             this.bonus_textbox.Name = "bonus_textbox";
             this.bonus_textbox.ReadOnly = true;
-            this.bonus_textbox.Size = new System.Drawing.Size(200, 50);
+            this.bonus_textbox.Size = new System.Drawing.Size(298, 50);
             this.bonus_textbox.TabIndex = 1;
             this.bonus_textbox.TextChanged += new System.EventHandler(this.bonus_textbox_TextChanged);
             // 

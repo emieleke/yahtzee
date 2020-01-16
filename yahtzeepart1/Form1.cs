@@ -61,9 +61,14 @@ namespace yahtzeepart1
             int dobbel5 = (dice[4]);
             int score = dobbel1 + dobbel2 + dobbel3 + dobbel4 + dobbel5;
             textBox1.Text = Convert.ToString(score);
+
+            if (dobbel1 == dobbel2 && dobbel2 == dobbel3 && dobbel3 == dobbel4 && dobbel4 == dobbel5)
+            {
+                bonus_textbox.Text = "yahtzee!";
+            }
         }
 
-        //dit rolled de dice 
+        //dit veranderd de plaatjes
         private void Rolldice()
         {
             for (int i = 0; i < dice.Length; i++)
