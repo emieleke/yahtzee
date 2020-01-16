@@ -100,6 +100,10 @@ namespace yahtzeepart1
 
         }
 
+        private void bonus_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
 
 

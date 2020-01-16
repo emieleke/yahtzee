@@ -45,6 +45,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.score_textbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.bonus_textbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -182,7 +183,7 @@
             this.score_textbox.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.score_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.score_textbox.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score_textbox.Location = new System.Drawing.Point(779, 12);
+            this.score_textbox.Location = new System.Drawing.Point(778, 25);
             this.score_textbox.Multiline = true;
             this.score_textbox.Name = "score_textbox";
             this.score_textbox.ReadOnly = true;
@@ -196,11 +197,21 @@
             this.textBox1.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(972, 12);
+            this.textBox1.Location = new System.Drawing.Point(969, 25);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(90, 63);
             this.textBox1.TabIndex = 26;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // bonus_textbox
+            // 
+            this.bonus_textbox.Location = new System.Drawing.Point(389, 25);
+            this.bonus_textbox.Multiline = true;
+            this.bonus_textbox.Name = "bonus_textbox";
+            this.bonus_textbox.ReadOnly = true;
+            this.bonus_textbox.Size = new System.Drawing.Size(200, 50);
+            this.bonus_textbox.TabIndex = 1;
+            this.bonus_textbox.TextChanged += new System.EventHandler(this.bonus_textbox_TextChanged);
             // 
             // Form1
             // 
@@ -210,6 +221,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1088, 555);
+            this.Controls.Add(this.bonus_textbox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.score_textbox);
             this.Controls.Add(this.checkBox_stop1);
@@ -255,6 +267,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox score_textbox;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox bonus_textbox;
     }
 }
 
