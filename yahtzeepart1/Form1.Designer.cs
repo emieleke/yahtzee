@@ -139,6 +139,7 @@
             this.checkBox_stop4.Size = new System.Drawing.Size(18, 17);
             this.checkBox_stop4.TabIndex = 20;
             this.checkBox_stop4.UseVisualStyleBackColor = true;
+            this.checkBox_stop4.CheckedChanged += new System.EventHandler(this.checkBox_stop4_CheckedChanged);
             // 
             // checkBox_stop2
             // 
