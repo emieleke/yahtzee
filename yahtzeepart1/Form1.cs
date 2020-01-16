@@ -60,7 +60,6 @@ namespace yahtzeepart1
         private void Rolldice()
         {
             for (int i = 0; i < dice.Length; i++)
-                if (!CheckedListBox = checked )
                     dice[i] = rand.Next(1, 7);
 
             pictureBox1.Image = diceimages[dice[0]];
@@ -75,7 +74,7 @@ namespace yahtzeepart1
         //spelregel knop 
         private void spelregels_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Spelregels Yahtzee \nHoe werkt het? \nHet spel Yahtzee is een dobbelspel dat gespeeld wordt met 5 dobbelstenen en een scoreblok. Elke speler mag per beurt maximaal 3 x met de dobbelstenen gooien en proberen een zo hoog mogelijke score te behalen die hij kan opschrijven bij een van de combinaties op het scoreblok. Je bent verplicht om na elke beurt een vakje in te kruisen. \n                                                                                                                         Scores:\nBovenste vakken Bij de vakken 1 t / m 6 is het aantal punten gelijk aan het aantal keer dat een dobbelsteen het overeenkomstige aantal ogen aanwijst, vermenigvuldigd met het aantal ogen.\nOnderste vakken:\nDrie gelijke: De score is het totaal van alle ogen, als er minstens 3 dobbelstenen met hetzelfde aantal ogen zijn.\nVier gelijke: De score is het totaal van alle ogen, als er minstens 4 dobbelstenen met hetzelfde aantal ogen zijn.\nleine straat: 30 punten voor 4 oplopende dobbelstenen. (de volgorde speelt geen rol)\nGrote straat: 40 punten voor 5 oplopende dobbelstenen. (de volgorde speelt geen rol)\nFull House: 25 punten voor 3 gelijke en één paar. (5 gelijke telt niet als Full House, tenzij het vak Yahtzee reeds ingevuld is).\nKans: De score is het totaal aantal ogen van alle dobbelstenen.\nYahtzee: 50 punten als alle dobbelstenen hetzelfde aantal ogen hebben.");
         }
 
         //hier hoeven we niks mee ik kan ze gewoon niet wegkrijgen
