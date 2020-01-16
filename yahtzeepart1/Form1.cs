@@ -28,6 +28,7 @@ namespace yahtzeepart1
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //alle plaatjes voor de dobbelstenen
@@ -40,9 +41,11 @@ namespace yahtzeepart1
             diceimages[5] = Properties.Resources.Alea_5;
             diceimages[6] = Properties.Resources.Alea_6;
 
-            dice = new int[5] { 0, 0, 0, 0, 0,};
+            dice = new int[5] { 0, 0, 0, 0, 0, };
 
             rand = new Random();
+
+
         }
 
         #endregion
@@ -53,10 +56,12 @@ namespace yahtzeepart1
             Rolldice();
         }
 
+        //dit rolled de dice 
         private void Rolldice()
         {
             for (int i = 0; i < dice.Length; i++)
-                dice[i] = rand.Next(1, 7);
+                if (!CheckedListBox = checked )
+                    dice[i] = rand.Next(1, 7);
 
             pictureBox1.Image = diceimages[dice[0]];
             pictureBox2.Image = diceimages[dice[1]];
@@ -65,16 +70,15 @@ namespace yahtzeepart1
             pictureBox5.Image = diceimages[dice[4]];
         }
 
-
-
         #endregion
 
-
+        //spelregel knop 
         private void spelregels_Click(object sender, EventArgs e)
         {
 
         }
 
+        //hier hoeven we niks mee ik kan ze gewoon niet wegkrijgen
         private void pictureBox6_Click(object sender, EventArgs e)
         {
 
@@ -89,6 +93,7 @@ namespace yahtzeepart1
         {
 
         }
+
     }
 }
 
