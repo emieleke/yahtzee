@@ -14,15 +14,15 @@ namespace yahtzeepart1
 {
     public partial class Form1 : Form
     {
-        #region Declaration
+        
 
         Image[] diceimages;
         int[] dice;
         Random rand;
 
-        #endregion
+       
 
-        #region initialization
+        
         public Form1()
         {
             InitializeComponent();
@@ -48,9 +48,9 @@ namespace yahtzeepart1
 
         }
 
-        #endregion
+        
 
-        #region private methods
+        
         private void dobbelen_Click(object sender, EventArgs e)
         {
             Rolldice();
@@ -60,8 +60,9 @@ namespace yahtzeepart1
         private void Rolldice()
         {
             for (int i = 0; i < dice.Length; i++)
-                if (!CheckedListBox = checked )
                     dice[i] = rand.Next(1, 7);
+            
+
 
             pictureBox1.Image = diceimages[dice[0]];
             pictureBox2.Image = diceimages[dice[1]];
@@ -70,7 +71,7 @@ namespace yahtzeepart1
             pictureBox5.Image = diceimages[dice[4]];
         }
 
-        #endregion
+        
 
         //spelregel knop 
         private void spelregels_Click(object sender, EventArgs e)
@@ -94,6 +95,9 @@ namespace yahtzeepart1
 
         }
 
+        private void checkBox_stop4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
