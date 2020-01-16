@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dobbelen = new System.Windows.Forms.Button();
             this.spelregels = new System.Windows.Forms.Button();
@@ -41,6 +42,9 @@
             this.checkBox_stop2 = new System.Windows.Forms.CheckBox();
             this.checkBox_stop5 = new System.Windows.Forms.CheckBox();
             this.checkBox_stop1 = new System.Windows.Forms.CheckBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.score_textbox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -62,13 +66,13 @@
             // 
             // spelregels
             // 
-            this.spelregels.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("spelregels.BackgroundImage")));
-            this.spelregels.Location = new System.Drawing.Point(12, 12);
+            this.spelregels.BackColor = System.Drawing.Color.Transparent;
+            this.spelregels.Location = new System.Drawing.Point(23, 26);
             this.spelregels.Name = "spelregels";
-            this.spelregels.Size = new System.Drawing.Size(78, 32);
+            this.spelregels.Size = new System.Drawing.Size(97, 36);
             this.spelregels.TabIndex = 7;
             this.spelregels.Text = "spelregels";
-            this.spelregels.UseVisualStyleBackColor = true;
+            this.spelregels.UseVisualStyleBackColor = false;
             this.spelregels.Click += new System.EventHandler(this.spelregels_Click);
             // 
             // pictureBox1
@@ -133,13 +137,12 @@
             // 
             // checkBox_stop4
             // 
-            this.checkBox_stop4.AutoSize = true;
-            this.checkBox_stop4.Location = new System.Drawing.Point(577, 260);
+            this.checkBox_stop4.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox_stop4.Location = new System.Drawing.Point(576, 260);
             this.checkBox_stop4.Name = "checkBox_stop4";
-            this.checkBox_stop4.Size = new System.Drawing.Size(18, 17);
-            this.checkBox_stop4.TabIndex = 20;
-            this.checkBox_stop4.UseVisualStyleBackColor = true;
-            this.checkBox_stop4.CheckedChanged += new System.EventHandler(this.checkBox_stop4_CheckedChanged);
+            this.checkBox_stop4.Size = new System.Drawing.Size(23, 24);
+            this.checkBox_stop4.TabIndex = 24;
+            this.checkBox_stop4.UseVisualStyleBackColor = false;
             // 
             // checkBox_stop2
             // 
@@ -168,6 +171,37 @@
             this.checkBox_stop1.TabIndex = 23;
             this.checkBox_stop1.UseVisualStyleBackColor = true;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // score_textbox
+            // 
+            this.score_textbox.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.score_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.score_textbox.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_textbox.Location = new System.Drawing.Point(779, 12);
+            this.score_textbox.Multiline = true;
+            this.score_textbox.Name = "score_textbox";
+            this.score_textbox.ReadOnly = true;
+            this.score_textbox.Size = new System.Drawing.Size(200, 50);
+            this.score_textbox.TabIndex = 25;
+            this.score_textbox.Text = "Score:";
+            this.score_textbox.TextChanged += new System.EventHandler(this.score_textbox_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Algerian", 28.2F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(972, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(90, 63);
+            this.textBox1.TabIndex = 26;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -176,6 +210,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1088, 555);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.score_textbox);
             this.Controls.Add(this.checkBox_stop1);
             this.Controls.Add(this.checkBox_stop5);
             this.Controls.Add(this.checkBox_stop2);
@@ -216,6 +252,9 @@
         private System.Windows.Forms.CheckBox checkBox_stop2;
         private System.Windows.Forms.CheckBox checkBox_stop5;
         private System.Windows.Forms.CheckBox checkBox_stop1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox score_textbox;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
