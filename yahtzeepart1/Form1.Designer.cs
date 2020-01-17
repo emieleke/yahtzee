@@ -37,15 +37,15 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.checkBox_stop3 = new System.Windows.Forms.CheckBox();
-            this.checkBox_stop4 = new System.Windows.Forms.CheckBox();
-            this.checkBox_stop2 = new System.Windows.Forms.CheckBox();
-            this.checkBox_stop5 = new System.Windows.Forms.CheckBox();
-            this.checkBox_stop1 = new System.Windows.Forms.CheckBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.score_textbox = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.bonus_textbox = new System.Windows.Forms.TextBox();
+            this.stop_dice1 = new System.Windows.Forms.Button();
+            this.stop_dice2 = new System.Windows.Forms.Button();
+            this.stop_dice3 = new System.Windows.Forms.Button();
+            this.stop_dice4 = new System.Windows.Forms.Button();
+            this.stop_dice5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -68,7 +68,7 @@
             // spelregels
             // 
             this.spelregels.BackColor = System.Drawing.Color.Transparent;
-            this.spelregels.Location = new System.Drawing.Point(23, 26);
+            this.spelregels.Location = new System.Drawing.Point(12, 12);
             this.spelregels.Name = "spelregels";
             this.spelregels.Size = new System.Drawing.Size(97, 36);
             this.spelregels.TabIndex = 7;
@@ -85,6 +85,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(150, 140);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox4
             // 
@@ -116,6 +117,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(150, 140);
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
@@ -126,51 +128,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(150, 140);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
-            // 
-            // checkBox_stop3
-            // 
-            this.checkBox_stop3.AutoSize = true;
-            this.checkBox_stop3.Location = new System.Drawing.Point(439, 406);
-            this.checkBox_stop3.Name = "checkBox_stop3";
-            this.checkBox_stop3.Size = new System.Drawing.Size(18, 17);
-            this.checkBox_stop3.TabIndex = 19;
-            this.checkBox_stop3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_stop4
-            // 
-            this.checkBox_stop4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox_stop4.Location = new System.Drawing.Point(576, 260);
-            this.checkBox_stop4.Name = "checkBox_stop4";
-            this.checkBox_stop4.Size = new System.Drawing.Size(23, 24);
-            this.checkBox_stop4.TabIndex = 24;
-            this.checkBox_stop4.UseVisualStyleBackColor = false;
-            // 
-            // checkBox_stop2
-            // 
-            this.checkBox_stop2.AutoSize = true;
-            this.checkBox_stop2.Location = new System.Drawing.Point(308, 260);
-            this.checkBox_stop2.Name = "checkBox_stop2";
-            this.checkBox_stop2.Size = new System.Drawing.Size(18, 17);
-            this.checkBox_stop2.TabIndex = 21;
-            this.checkBox_stop2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_stop5
-            // 
-            this.checkBox_stop5.AutoSize = true;
-            this.checkBox_stop5.Location = new System.Drawing.Point(717, 412);
-            this.checkBox_stop5.Name = "checkBox_stop5";
-            this.checkBox_stop5.Size = new System.Drawing.Size(18, 17);
-            this.checkBox_stop5.TabIndex = 22;
-            this.checkBox_stop5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_stop1
-            // 
-            this.checkBox_stop1.AutoSize = true;
-            this.checkBox_stop1.Location = new System.Drawing.Point(178, 406);
-            this.checkBox_stop1.Name = "checkBox_stop1";
-            this.checkBox_stop1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox_stop1.TabIndex = 23;
-            this.checkBox_stop1.UseVisualStyleBackColor = true;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // contextMenuStrip1
             // 
@@ -201,7 +159,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(90, 63);
             this.textBox1.TabIndex = 26;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // bonus_textbox
             // 
@@ -216,6 +173,66 @@
             this.bonus_textbox.TabIndex = 1;
             this.bonus_textbox.TextChanged += new System.EventHandler(this.bonus_textbox_TextChanged);
             // 
+            // stop_dice1
+            // 
+            this.stop_dice1.BackColor = System.Drawing.Color.Transparent;
+            this.stop_dice1.ForeColor = System.Drawing.Color.Black;
+            this.stop_dice1.Location = new System.Drawing.Point(137, 406);
+            this.stop_dice1.Name = "stop_dice1";
+            this.stop_dice1.Size = new System.Drawing.Size(100, 36);
+            this.stop_dice1.TabIndex = 27;
+            this.stop_dice1.Text = "stop";
+            this.stop_dice1.UseVisualStyleBackColor = false;
+            this.stop_dice1.Click += new System.EventHandler(this.stop_dice1_Click);
+            // 
+            // stop_dice2
+            // 
+            this.stop_dice2.BackColor = System.Drawing.Color.Transparent;
+            this.stop_dice2.ForeColor = System.Drawing.Color.Black;
+            this.stop_dice2.Location = new System.Drawing.Point(266, 260);
+            this.stop_dice2.Name = "stop_dice2";
+            this.stop_dice2.Size = new System.Drawing.Size(100, 36);
+            this.stop_dice2.TabIndex = 28;
+            this.stop_dice2.Text = "stop";
+            this.stop_dice2.UseVisualStyleBackColor = false;
+            this.stop_dice2.Click += new System.EventHandler(this.stop_dice2_Click);
+            // 
+            // stop_dice3
+            // 
+            this.stop_dice3.BackColor = System.Drawing.Color.Transparent;
+            this.stop_dice3.ForeColor = System.Drawing.Color.Black;
+            this.stop_dice3.Location = new System.Drawing.Point(396, 406);
+            this.stop_dice3.Name = "stop_dice3";
+            this.stop_dice3.Size = new System.Drawing.Size(100, 36);
+            this.stop_dice3.TabIndex = 29;
+            this.stop_dice3.Text = "stop";
+            this.stop_dice3.UseVisualStyleBackColor = false;
+            this.stop_dice3.Click += new System.EventHandler(this.stop_dice3_Click);
+            // 
+            // stop_dice4
+            // 
+            this.stop_dice4.BackColor = System.Drawing.Color.Transparent;
+            this.stop_dice4.ForeColor = System.Drawing.Color.Black;
+            this.stop_dice4.Location = new System.Drawing.Point(540, 260);
+            this.stop_dice4.Name = "stop_dice4";
+            this.stop_dice4.Size = new System.Drawing.Size(100, 36);
+            this.stop_dice4.TabIndex = 30;
+            this.stop_dice4.Text = "stop";
+            this.stop_dice4.UseVisualStyleBackColor = false;
+            this.stop_dice4.Click += new System.EventHandler(this.stop_dice4_Click);
+            // 
+            // stop_dice5
+            // 
+            this.stop_dice5.BackColor = System.Drawing.Color.Transparent;
+            this.stop_dice5.ForeColor = System.Drawing.Color.Black;
+            this.stop_dice5.Location = new System.Drawing.Point(672, 411);
+            this.stop_dice5.Name = "stop_dice5";
+            this.stop_dice5.Size = new System.Drawing.Size(100, 36);
+            this.stop_dice5.TabIndex = 31;
+            this.stop_dice5.Text = "stop";
+            this.stop_dice5.UseVisualStyleBackColor = false;
+            this.stop_dice5.Click += new System.EventHandler(this.stop_dice5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -224,14 +241,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1088, 555);
+            this.Controls.Add(this.stop_dice5);
+            this.Controls.Add(this.stop_dice4);
+            this.Controls.Add(this.stop_dice3);
+            this.Controls.Add(this.stop_dice2);
+            this.Controls.Add(this.stop_dice1);
             this.Controls.Add(this.bonus_textbox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.score_textbox);
-            this.Controls.Add(this.checkBox_stop1);
-            this.Controls.Add(this.checkBox_stop5);
-            this.Controls.Add(this.checkBox_stop2);
-            this.Controls.Add(this.checkBox_stop4);
-            this.Controls.Add(this.checkBox_stop3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox5);
@@ -262,15 +279,15 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.CheckBox checkBox_stop3;
-        private System.Windows.Forms.CheckBox checkBox_stop4;
-        private System.Windows.Forms.CheckBox checkBox_stop2;
-        private System.Windows.Forms.CheckBox checkBox_stop5;
-        private System.Windows.Forms.CheckBox checkBox_stop1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox score_textbox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox bonus_textbox;
+        private System.Windows.Forms.Button stop_dice1;
+        private System.Windows.Forms.Button stop_dice2;
+        private System.Windows.Forms.Button stop_dice3;
+        private System.Windows.Forms.Button stop_dice4;
+        private System.Windows.Forms.Button stop_dice5;
     }
 }
 

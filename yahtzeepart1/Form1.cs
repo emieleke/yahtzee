@@ -12,9 +12,20 @@ using System.Windows.Forms;
 
 namespace yahtzeepart1
 {
+    
     public partial class Form1 : Form
     {
-
+        public bool alGestoptDobbel1 = false;
+        public bool alGestoptDobbel2 = false;
+        public bool alGestoptDobbel3 = false;
+        public bool alGestoptDobbel4 = false;
+        public bool alGestoptDobbel5 = false;
+        //De dobbelstenen
+        public int dobbel1 = 0;
+        public int dobbel2 = 0;
+        public int dobbel3 = 0;
+        public int dobbel4 = 0;
+        public int dobbel5 = 0;
 
         Image[] diceimages;
         int[] dice;
@@ -44,8 +55,6 @@ namespace yahtzeepart1
             dice = new int[5] { 0, 0, 0, 0, 0, };
 
             rand = new Random();
-
-
         }
 
 
@@ -54,13 +63,34 @@ namespace yahtzeepart1
         public void dobbelen_Click(object sender, EventArgs e)
         {
             Rolldice();
-            int dobbel1 = (dice[0]);
-            int dobbel2 = (dice[1]);
-            int dobbel3 = (dice[2]);
-            int dobbel4 = (dice[3]);
-            int dobbel5 = (dice[4]);
+            if (alGestoptDobbel1 != true)
+            {
+                dobbel1 = (dice[0]);
+            }
+            if (alGestoptDobbel1 != true)
+            {
+                dobbel2 = (dice[1]);
+            }
+            if (alGestoptDobbel1 != true)
+            {
+                dobbel3 = (dice[2]);
+            }
+            if (alGestoptDobbel1 != true)
+            {
+                dobbel4 = (dice[3]);
+            }
+            if (alGestoptDobbel1 != true)
+            {
+                dobbel5 = (dice[4]);
+            }
+
+            
             int score = dobbel1 + dobbel2 + dobbel3 + dobbel4 + dobbel5;
             textBox1.Text = Convert.ToString(score);
+
+
+
+
 
             if (dobbel1 == dobbel2 && dobbel2 == dobbel3 && dobbel3 == dobbel4 && dobbel4 == dobbel5)
             {
@@ -75,12 +105,28 @@ namespace yahtzeepart1
                 dice[i] = rand.Next(1, 7);
 
 
+            if (alGestoptDobbel1 != true)
+            {
+                pictureBox1.Image = diceimages[dice[0]];
+            }
+            if (alGestoptDobbel2 != true)
+            {
+                pictureBox2.Image = diceimages[dice[1]];
+            }
+            if (alGestoptDobbel3 != true)
+            {
+                pictureBox3.Image = diceimages[dice[2]];
+            }
+            if (alGestoptDobbel4 != true)
+            {
+                pictureBox4.Image = diceimages[dice[3]];
+            }
+            if (alGestoptDobbel5 != true)
+            {
+                pictureBox5.Image = diceimages[dice[4]];
+            } 
 
-            pictureBox1.Image = diceimages[dice[0]];
-            pictureBox2.Image = diceimages[dice[1]];
-            pictureBox3.Image = diceimages[dice[2]];
-            pictureBox4.Image = diceimages[dice[3]];
-            pictureBox5.Image = diceimages[dice[4]];
+
         }
 
 
@@ -92,22 +138,46 @@ namespace yahtzeepart1
         }
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void stop_dice1_Click(object sender, EventArgs e)
         {
-            int dobbel1 = (dice[0]);
-            int dobbel2 = (dice[1]);
-            int dobbel3 = (dice[2]);
-            int dobbel4 = (dice[3]);
-            int dobbel5 = (dice[4]);
-
-            int score = dobbel1 + dobbel2 + dobbel3 + dobbel4 + dobbel5;
-            textBox1.Text = Convert.ToString(score);
-
+            if (alGestoptDobbel1 != true)
+            {
+                alGestoptDobbel1 = true;
+            }
         }
 
-        private void bonus_textbox_TextChanged(object sender, EventArgs e)
-        {
 
+        private void stop_dice2_Click(object sender, EventArgs e)
+        {
+            if (alGestoptDobbel2 != true)
+            {
+                alGestoptDobbel2 = true;
+            }
+        }
+
+        private void stop_dice3_Click(object sender, EventArgs e)
+        {
+            if (alGestoptDobbel3 != true)
+            {
+                alGestoptDobbel3 = true;
+            }
+        }
+
+        private void stop_dice4_Click(object sender, EventArgs e)
+        {
+            if (alGestoptDobbel4 != true)
+            {
+                alGestoptDobbel4 = true;
+            }
+        }
+
+        private void stop_dice5_Click(object sender, EventArgs e)
+        {
+            if (alGestoptDobbel5 != true)
+            {
+                alGestoptDobbel5 = true;
+            }
         }
 
 
@@ -148,6 +218,31 @@ namespace yahtzeepart1
         private void score_textbox_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_stop2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bonus_textbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
     }
